@@ -8,6 +8,7 @@ const createTask = document.getElementById('createTask');
 
 const toDoContainer = document.getElementById('items');
 
+
 //use username and item to post to backend
 
 
@@ -22,7 +23,7 @@ createTask.addEventListener('click', function(){
 
     let editButton = document.createElement('button');
     editButton.innerText = 'Edit';
-    editButton.addEventListener('cliclk', function() {
+    editButton.addEventListener('click', function() {
         handleEditButton(text.innerText);
     })
     let deleteButton = document.createElement('button');
@@ -38,6 +39,7 @@ createTask.addEventListener('click', function(){
     newTask = '';
 
     //fetch to backend to post data to database;
+
 }) 
 
 function handleEditButton(text) {
